@@ -86,6 +86,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/padding_category" >
+
+        <org.aospextended.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_left_padding"
+            android:title="@string/statusbar_left_padding"
+            android:max="50"
+            android:min="0"
+            android:defaultValue="8"/>
+
+         <org.aospextended.support.preferences.SystemSettingSeekBarPreference
+            android:key="statusbar_right_padding"
+            android:title="@string/statusbar_right_padding"
+            android:max="50"
+            android:min="0"
+            android:defaultValue="8"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="misc_extensions_gestures_category"
         android:title="@string/gestures_category">
 
