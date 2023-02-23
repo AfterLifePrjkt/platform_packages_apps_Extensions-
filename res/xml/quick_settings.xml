@@ -106,12 +106,25 @@
             android:defaultValue="false"
             android:dependency="qs_show_brightness" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/qs_weather">
+
         <org.aospextended.support.preference.SystemSettingListPreference
-            android:key="status_bar_show_weather_temp"
-            android:title="@string/statusbar_weather_title"
-            android:dialogTitle="@string/statusbar_weather_dialog_title"
-            android:entries="@array/status_bar_weather_entries"
-            android:entryValues="@array/status_bar_weather_values" />
+            android:key="qs_show_weather_temp"
+            android:title="@string/qs_weather_title"
+            android:summary="%s"
+            android:dialogTitle="@string/qs_weather_dialog_title"
+            android:entries="@array/qs_weather_entries"
+            android:entryValues="@array/qs_weather_values"
+            android:defaultValue="0" />
+
+        <Preference
+            android:key="omnijaws_settings"
+            android:title="@string/qs_weather_settings_title"
+            android:summary="@string/qs_weather_settings_summary"
+            android:fragment="org.aospextended.extensions.fragments.OmniJawsSettings" />
 
     </PreferenceCategory>
     
