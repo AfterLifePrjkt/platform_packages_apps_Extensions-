@@ -27,6 +27,12 @@
              android:defaultValue="false" />
 
          <org.aospextended.support.preference.SystemSettingSwitchPreference
+            android:key="statusbar_clock_chip"
+            android:title="@string/statusbar_clock_chip_title"
+            android:summary="@string/statusbar_clock_chip_summary"
+            android:defaultValue="false" />
+
+         <org.aospextended.support.preference.SystemSettingSwitchPreference
             android:key="data_disabled_icon"
             android:title="@string/data_disabled_icon_title"
             android:summary="@string/data_disabled_icon_summary"

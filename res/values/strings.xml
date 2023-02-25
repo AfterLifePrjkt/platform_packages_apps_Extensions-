@@ -649,4 +649,8 @@
     <string name="weather_config_summary">System service settings</string>
     <string name="weather_icon_pack_title">Condition icon pack</string>
     <string name="custom_weather_explainer">You are not limited to the pre-installed weather icon packages. Search on Google PlayStore with the keyword "chronus icons" and you will find a lot of additional packages.</string>
+
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Background chip</string>
+    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
 </resources>
