@@ -622,8 +622,8 @@
     <string name="volume_steps_reset">Reset</string>
 
     <!-- Statusbar colored icons -->
-    <string name="statusbar_icons_style">Colored Statusbar Icons</string>
-    <string name="statusbar_icons_style_summary">Choose the style of your statusbar icons (requires systemUI restart)</string>
+    <string name="statusbar_icons_style">Colored Notification Icons</string>
+    <string name="statusbar_icons_style_summary">Use proper app icons for notification icons in statusbar</string>
 
     <!-- Statusbar left_right padding -->
     <string name="padding_category">Statusbar padding</string>
