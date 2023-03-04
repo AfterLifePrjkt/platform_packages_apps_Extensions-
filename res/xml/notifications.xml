@@ -32,12 +32,6 @@
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
-         <org.aospextended.support.preference.SystemSettingSwitchPreference
-	        android:key="statusbar_notif_count"
-	        android:title="@string/statusbar_notif_count_title"
-	        android:summary="@string/statusbar_notif_count_summary"
-	        android:defaultValue="false" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
