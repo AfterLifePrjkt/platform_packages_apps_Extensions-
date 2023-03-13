@@ -19,7 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="extensions_title">Extensions</string>
+    <string name="extensions_title">Extensions+</string>
     <string name="add">Add</string>
     <string name="advanced">Advanced</string>
     <string name="cancel">Cancel</string>
@@ -657,4 +657,15 @@
     <!-- Notification count -->
     <string name="statusbar_notif_count_title">Show notification count</string>
     <string name="statusbar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- reTicker -->
+    <string name="reticker_category" translatable="false">reTicker</string>
+    <string name="reticker_title">reTicker</string>
+    <string name="new_reticker_title">Alternative reTicker</string>
+    <string name="new_reticker_summary">Use an alternative layout for reticker that is inspired from ios</string>
+    <string name="new_reticker_animation_title">Alternative reTicker animation</string>
+    <string name="new_reticker_animation_summary">Use a different animation for reticker (enabled by default on alternative reTicker)</string>
+    <string name="reticker_summary">Replace your notifications with a redesigned version of tickers. \nSlim and less invasive than a standard notification</string>
+    <string name="reticker_colored_title">Use app colored background</string>
+    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
 </resources>
