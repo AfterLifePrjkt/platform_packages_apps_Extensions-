@@ -672,4 +672,8 @@
     <!-- Statusbar qs Clock font size -->
     <string name="status_bar_clock_font_size_title">Statusbar Clock font size</string>
     <string name="qs_clock_font_size_title">QS Header Clock font size</string>
+
+    <!-- QS footer data usage -->
+    <string name="qs_show_data_usage_title">Show data usage</string>
+    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
 </resources>
