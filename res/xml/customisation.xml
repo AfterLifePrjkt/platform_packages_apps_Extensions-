@@ -43,6 +43,13 @@
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="org.aospextended.extensions.fragments.StatusbarIcons"/>
 
+        <org.aospextended.support.preference.SecureSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="2" />
+
         <Preference
             android:key="android.theme.customization.signal_icon"
             android:title="@string/theme_customization_signal_icon_title"
