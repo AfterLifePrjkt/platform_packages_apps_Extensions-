@@ -682,4 +682,10 @@
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Clear all notification button</string>
+    <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
+    <string name="notification_material_dismiss_style_title">Button style</string>
+    <string name="notification_material_dismiss_bgstyle_title">Button background</string>
 </resources>
