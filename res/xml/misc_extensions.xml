@@ -52,7 +52,7 @@
 
          <org.aospextended.support.preference.SecureSettingSwitchPreference
              android:key="show_combined_status_bar_signal_icons"
-             android:title="@string/combined_status_bar_signal_icons"
+             android:title="@string/combined_status_bar_signal_icons_title"
              android:summary="@string/combined_status_bar_signal_icons_summary"
              android:defaultValue="true" />
 

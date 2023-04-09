@@ -76,7 +76,6 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
     private static final String SYSTEMUI_PACKAGE = "com.android.systemui";
 
     private SwitchPreference mShowAexLogo;
-    private SwitchPreference mEnableCombinedSignalIcons;
     private SecureSettingSwitchPreference mLocationIndicator;
     private SecureSettingSwitchPreference mCamIndicator;
     private SecureSettingSwitchPreference mCombinedIcons;
@@ -95,6 +94,19 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
         mShowAexLogo.setOnPreferenceChangeListener(this);
 
+        mLocationIndicator = (SecureSettingSwitchPreference) findPreference(LOCATION_INDICATOR);
+        boolean locIndicator = DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
+                LOCATION_DEVICE_CONFIG, false);
+        mLocationIndicator.setDefaultValue(locIndicator);
+        mLocationIndicator.setChecked(Settings.Secure.getInt(resolver,
+                LOCATION_INDICATOR, locIndicator ? 1 : 0) == 1);
+
+        mCamIndicator = (SecureSettingSwitchPreference) findPreference(CAMERA_INDICATOR);
+        boolean camIndicator = DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
+                CAMERA_DEVICE_CONFIG, false);
+        mCamIndicator.setDefaultValue(camIndicator);
+        mCamIndicator.setChecked(Settings.Secure.getInt(resolver,
+                CAMERA_INDICATOR, camIndicator ? 1 : 0) == 1);
         mCombinedIcons = (SecureSettingSwitchPreference)
                 findPreference(COMBINED_STATUSBAR_ICONS);
         Resources sysUIRes = null;
@@ -115,20 +127,6 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
                 COMBINED_STATUSBAR_ICONS, def ? 1 : 0) == 1;
         mCombinedIcons.setChecked(enabled);
         mCombinedIcons.setOnPreferenceChangeListener(this);
-
-        mLocationIndicator = (SecureSettingSwitchPreference) findPreference(LOCATION_INDICATOR);
-        boolean locIndicator = DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
-                LOCATION_DEVICE_CONFIG, false);
-        mLocationIndicator.setDefaultValue(locIndicator);
-        mLocationIndicator.setChecked(Settings.Secure.getInt(resolver,
-                LOCATION_INDICATOR, locIndicator ? 1 : 0) == 1);
-
-        mCamIndicator = (SecureSettingSwitchPreference) findPreference(CAMERA_INDICATOR);
-        boolean camIndicator = DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
-                CAMERA_DEVICE_CONFIG, false);
-        mCamIndicator.setDefaultValue(camIndicator);
-        mCamIndicator.setChecked(Settings.Secure.getInt(resolver,
-                CAMERA_INDICATOR, camIndicator ? 1 : 0) == 1);
     }
 
     @Override
@@ -143,6 +141,7 @@ public class MiscExtensions extends SettingsPreferenceFragment implements OnPref
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+    final ContentResolver resolver = getActivity().getContentResolver();
         if  (preference == mShowAexLogo) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
