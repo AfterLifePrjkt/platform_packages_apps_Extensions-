@@ -50,17 +50,17 @@
             android:summary="@string/use_old_mobiletype_summary"
             android:defaultValue="false" />            
 
-         <SwitchPreference
-             android:key="combined_status_bar_signal_icons"
-             android:title="@string/combined_status_bar_signal_icons_title"
+         <org.aospextended.support.preference.SecureSettingSwitchPreference
+             android:key="show_combined_status_bar_signal_icons"
+             android:title="@string/combined_status_bar_signal_icons"
              android:summary="@string/combined_status_bar_signal_icons_summary"
-             android:defaultValue="false" />
+             android:defaultValue="true" />
 
          <org.aospextended.support.preference.SecureSettingSwitchPreference
             android:key="hide_qs_call_strength"
             android:title="@string/show_qs_call_strength_icon_title"
             android:summary="@string/show_qs_call_strength_icon_summary"
-            android:dependency="combined_status_bar_signal_icons"
+            android:dependency="show_combined_status_bar_signal_icons"
             android:defaultValue="true" />
 
          <org.aospextended.support.preference.SystemSettingSwitchPreference
