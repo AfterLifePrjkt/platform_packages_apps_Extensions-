@@ -71,6 +71,9 @@
     <!-- Misc Extensions -->
     <string name="misc_extensions_title">Misc Extensions</string>
 
+    <!-- Lockscreen gzone category -->
+    <string name="gzone_category">Game Zone</string>
+
     <!-- Navigation -->
     <string name="navigationbar_settings_title">Navigation Bar</string>
 
@@ -709,4 +712,8 @@
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Android P animation style</string>
     <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+
+    <!-- Gaming mode -->
+    <string name="gaming_mode_title">Gaming Mode</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
 </resources>

@@ -38,17 +38,35 @@
             android:summary="@string/pie_animation_style_summary"
             android:defaultValue="false" />
 
-        <org.aospextended.support.preference.SystemSettingSwitchPreference
-            android:key="use_games_spoof"
-            android:title="@string/use_games_spoof_title"
-            android:summary="@string/use_games_spoof_summary"
-            android:defaultValue="false" />
-
         <org.aospextended.support.preference.SystemSettingSwitchPreference       
             android:key="use_photos_spoof"
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="g_zone"
+        android:title="@string/gzone_category">
+
+    <org.aospextended.support.preference.SystemSettingSwitchPreference
+            android:key="use_games_spoof"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary"
+            android:defaultValue="false" />
+
+    <!-- Gaming mode -->
+    <Preference
+        android:key="gaming_mode"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="io.chaldeaprjkt.gamespace"
+            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+    </Preference>
 
     </PreferenceCategory>
 
