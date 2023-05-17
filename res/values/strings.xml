@@ -725,4 +725,11 @@
     <!-- Ignore window secure -->
     <string name="laboratory_ignore_window_secure_title">Ignore window secure flags</string>
     <string name="laboratory_ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Quicksettings media category -->
+    <string name="media_category">Media player</string>
+
+    <!-- Squiggle animation -->
+    <string name="show_squiggle_animation_title">Show squiggle animation</string>
+    <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
 </resources>
