@@ -22,7 +22,8 @@ import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.PowerManager;
+import android.os.UserHandle;
+
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
@@ -60,6 +61,9 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.android.internal.util.hwkeys.ActionConstants;
+import com.android.internal.util.hwkeys.ActionUtils;
+
 import org.aospextended.extensions.preference.ActionFragment;
 import org.aospextended.support.preference.CustomSeekBarPreference;
 import org.aospextended.support.preference.SystemSettingSwitchPreference;
@@ -77,11 +81,6 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_POWER = "power_key";
-
-    private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
-    private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
-    private static final String KEY_BUTON_BACKLIGHT_OPTIONS = "button_backlight_options_category";
-
      // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
     public static final int KEY_MASK_HOME = 0x01;
@@ -97,9 +96,6 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
 
     private SwitchPreference mHwKeyDisable;
     private ListPreference mTorchPowerButton;
-    private CustomSeekBarPreference mButtonTimoutBar;
-    private CustomSeekBarPreference mManualButtonBrightness;
-    private PreferenceCategory mButtonBackLightCategory;
     private SystemSettingSwitchPreference mVolPanelOnLeft;
 
     @Override
@@ -193,38 +189,13 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
         mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
         mTorchPowerButton.setOnPreferenceChangeListener(this);
 
-        mManualButtonBrightness = (CustomSeekBarPreference) findPreference(
-                KEY_BUTTON_MANUAL_BRIGHTNESS_NEW);
-        final int customButtonBrightness = getResources().getInteger(
-                com.android.internal.R.integer.config_button_brightness_default);
-        final int currentBrightness = Settings.System.getInt(resolver,
-                Settings.System.CUSTOM_BUTTON_BRIGHTNESS, customButtonBrightness);
-        PowerManager pm = (PowerManager)getActivity().getSystemService(Context.POWER_SERVICE);
-        mManualButtonBrightness.setMax(pm.getMaximumScreenBrightnessSetting());
-        mManualButtonBrightness.setValue(currentBrightness);
-        mManualButtonBrightness.setOnPreferenceChangeListener(this);
-
-        mButtonTimoutBar = (CustomSeekBarPreference) findPreference(KEY_BUTTON_TIMEOUT);
-        int currentTimeout = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
-        mButtonTimoutBar.setValue(currentTimeout);
-        mButtonTimoutBar.setOnPreferenceChangeListener(this);
-
-        final boolean enableBacklightOptions = getResources().getBoolean(
-                com.android.internal.R.bool.config_button_brightness_support);
-
-        mButtonBackLightCategory = (PreferenceCategory) findPreference(KEY_BUTON_BACKLIGHT_OPTIONS);
-
-        if (!enableBacklightOptions) {
-            prefScreen.removePreference(mButtonBackLightCategory);
-        }
-
         // Vol panel on left
         mVolPanelOnLeft = (SystemSettingSwitchPreference) findPreference(KEY_VOL_PANEL_ON_LEFT);
         boolean mVolPanelOnLeftValue = Settings.System.getInt(resolver,
                 Settings.System.VOLUME_PANEL_ON_LEFT, defaultPanelOnLeft ? 1 : 0) == 1;
         mVolPanelOnLeft.setOnPreferenceChangeListener(this);
         mVolPanelOnLeft.setChecked(mVolPanelOnLeftValue);
+
     }
 
     @Override
@@ -254,19 +225,6 @@ public class Buttons extends ActionFragment implements OnPreferenceChangeListene
             Settings.System.putInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE,
                     mTorchPowerButtonValue);
             return true;
-        } else if (preference == mHwKeyDisable) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEYS_DISABLE,
-                    value ? 1 : 0);
-            setActionPreferencesEnabled(!value);
-        } else if (preference == mButtonTimoutBar) {
-            int buttonTimeout = (Integer) objValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, buttonTimeout);
-        } else if (preference == mManualButtonBrightness) {
-            int buttonBrightness = (Integer) objValue;
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.CUSTOM_BUTTON_BRIGHTNESS, buttonBrightness);
         } else if (preference == mVolPanelOnLeft) {
             boolean volPanelOnLeftValue = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(),
