@@ -47,6 +47,15 @@
             android:summary="@string/new_reticker_animation_summary"
             android:defaultValue="false" />
 
+        <org.aospextended.support.preference.SystemSettingSeekBarPreference
+            android:key="max_visible_notification_icons"
+            android:title="@string/max_visible_notification_icons_title"
+            android:summary="@string/max_visible_notification_icons_summary"
+            android:defaultValue="5"
+            android:max="10"
+            settings:min="0"
+            settings:units="" />
+
         <org.aospextended.support.preference.SystemSettingSwitchPreference
            android:key="notification_guts_kill_app_button"
            android:title="@string/notification_guts_kill_app_button_title"
