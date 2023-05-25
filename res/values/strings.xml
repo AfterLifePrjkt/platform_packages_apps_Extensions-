@@ -733,4 +733,8 @@
     <!-- Max visible notification icons -->
     <string name="max_visible_notification_icons_title">Notification icons</string>
     <string name="max_visible_notification_icons_summary">Max. notification icons visible on statusbar</string>
+
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
 </resources>
