@@ -37,7 +37,7 @@
     <color name="x_colorSecondary">@android:color/system_neutral1_50</color>
     <color name="x_systemThemePreview_default_bg_disabled">#ffe3e3e3</color>
     <color name="x_systemThemePreview_default_surface_disabled">#ffc8c8c8</color>
-    <color name="x_colorOnCardBackground">@color/fluid_colorTertiary</color>
+    <color name="x_colorOnCardBackground">@color/x_colorTertiary</color>
     <color name="x_colorTertiary">@android:color/system_neutral1_100</color>
     <color name="system_accent1_200">@android:color/system_accent1_200</color>
     <color name="system_accent1_400">@android:color/system_accent1_400</color>

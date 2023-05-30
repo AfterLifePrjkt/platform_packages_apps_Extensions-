@@ -48,7 +48,7 @@
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lockscreen_category_summary">Its About LockscreenUi</string>
     <string name="navigation_and_recents_category">Navigation</string>
-    <string name="navigation_and_recents_category_summary">Cusomize Navigation And Gesture</string>
+    <string name="navigation_and_recents_category_summary">Customize Navigation And Gesture</string>
     <string name="build_tweaks_summary_title">Extend your device!</string>
     <string name="listview">ListView</string>
     <string name="light_category">Lights</string>

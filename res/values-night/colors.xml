@@ -27,7 +27,7 @@
 
     <!-- Cardext-->
     <color name="afl_grad_end">@android:color/system_neutral1_800</color>
-    <color name="afl_grad_start">@android:color/surface_header_dark</color>
+    <color name="afl_grad_start">@*android:color/surface_header_dark</color>
     <color name="afl_ripple">@android:color/system_neutral1_300</color>
 
 </resources>
