@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="192.0dip" android:width="144.0dip" android:viewportWidth="144.0" android:viewportHeight="192.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$x_system_theme_preview_monet__0" android:pathData="M0,16C0,7.163 7.163,0 16,0H128C136.837,0 144,7.163 144,16V176C144,184.837 136.837,192 128,192H16C7.163,192 0,184.837 0,176V16Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M16,120.75C16,117.436 19.582,114.75 24,114.75H120C124.418,114.75 128,117.436 128,120.75V132.75C128,136.064 124.418,138.75 120,138.75H24C19.582,138.75 16,136.064 16,132.75V120.75Z" android:fillAlpha="0.35" />
+    <path android:fillColor="#ffffffff" android:pathData="M16,153.75C16,150.436 19.582,147.75 24,147.75H120C124.418,147.75 128,150.436 128,153.75V165.75C128,169.064 124.418,171.75 120,171.75H24C19.582,171.75 16,169.064 16,165.75V153.75Z" android:fillAlpha="0.35" />
+    <path android:fillColor="#ffffffff" android:pathData="M16,24.5C16,20.082 19.582,16.5 24,16.5H120C124.418,16.5 128,20.082 128,24.5V38.5C128,42.918 124.418,46.5 120,46.5H24C19.582,46.5 16,42.918 16,38.5V24.5Z" android:fillAlpha="0.35" />
+</vector>

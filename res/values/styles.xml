@@ -21,4 +21,13 @@
         <item name="android:lineHeight">15sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+    <style name="xd_text_primary">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">@android:string/config_headlineFontFamily</item>
+    </style>
+    <style name="xd_text_secondary">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
 </resources>

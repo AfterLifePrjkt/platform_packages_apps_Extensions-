@@ -35,15 +35,20 @@
     <string name="color_title">Color</string>
     <string name="colors_title">Colors</string>
 
-    <!-- Extensions categories -->
+    <!-- ExtensionsPlus categories -->
     <string name="fingerprint_category">Fingerprint</string>
     <string name="gestures_category">Gestures</string>
     <string name="icons_category">Icons</string>
     <string name="status_bar_category">Statusbar</string>
+    <string name="status_bar_category_summary">Tweak Statusbar element</string>
     <string name="notifications_panel_category">QS panel</string>
+    <string name="notifications_panel_category_summary">Customize Qs Panel And Notification</string>
     <string name="system_category">System</string>
+    <string name="system_category_summary">Change the System Element</string>
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="lockscreen_category_summary">Its About LockscreenUi</string>
     <string name="navigation_and_recents_category">Navigation</string>
+    <string name="navigation_and_recents_category_summary">Cusomize Navigation And Gesture</string>
     <string name="build_tweaks_summary_title">Extend your device!</string>
     <string name="listview">ListView</string>
     <string name="light_category">Lights</string>
@@ -471,9 +476,9 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>  
 
     <!-- Monet Engine -->
-    <string name="monet_category">Monet</string>
+    <string name="monet_category">Color Decorations</string>
     <string name="monet_engine_title">Monet Engine</string>
-    <string name="monet_engine_summary">Customise monet parameters</string>
+    <string name="monet_engine_summary">Lets Make It Colorfull</string>
     <string name="monet_engine_custom_color_title">Use custom color</string>
     <string name="monet_engine_custom_color_summary">Use custom color for monet engine instead of wallpaper colors</string>
     <string name="monet_engine_color_override_title">Custom color</string>

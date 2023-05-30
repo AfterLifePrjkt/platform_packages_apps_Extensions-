@@ -30,4 +30,21 @@
     <color name="google_grey700">#5f6368</color>
     <color name="edit_background_base">@color/google_grey700</color>
     <color name="option_border_default">@color/edit_background_base</color>
+
+    <!-- Theme Preview-->
+    <color name="x_textColorPrimary">@android:color/primary_text_light</color>
+    <color name="x_colorCardBackground">@color/x_colorSecondary</color>
+    <color name="x_colorSecondary">@android:color/system_neutral1_50</color>
+    <color name="x_systemThemePreview_default_bg_disabled">#ffe3e3e3</color>
+    <color name="x_systemThemePreview_default_surface_disabled">#ffc8c8c8</color>
+    <color name="x_colorOnCardBackground">@color/fluid_colorTertiary</color>
+    <color name="x_colorTertiary">@android:color/system_neutral1_100</color>
+    <color name="system_accent1_200">@android:color/system_accent1_200</color>
+    <color name="system_accent1_400">@android:color/system_accent1_400</color>
+
+    <!-- Cardext-->
+    <color name="afl_ripple">@android:color/system_accent1_300</color>
+    <color name="afl_grad_end">@android:color/system_accent1_100</color>
+    <color name="afl_grad_start">@android:color/system_accent2_100</color>
+
 </resources>
