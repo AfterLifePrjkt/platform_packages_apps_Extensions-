@@ -41,6 +41,13 @@
             android:max="100"
             android:min="1" />
 
+        <org.aospextended.support.preference.SystemSettingListPreference
+            android:key="custom_transitions_page_tile"
+            android:entries="@array/qs_transitions_entries"
+            android:entryValues="@array/qs_transitions_values"
+            android:summary="%s"
+            android:title="@string/qs_transitions_title" />
+
         <ListPreference
             android:key="status_bar_quick_qs_pulldown"
             android:title="@string/status_bar_quick_qs_pulldown"
