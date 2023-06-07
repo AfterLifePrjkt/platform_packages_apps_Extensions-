@@ -18,9 +18,12 @@
  <PreferenceScreen android:title="@string/extensions_title"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-  <PreferenceScreen 
-        android:layout="@layout/themes_preview" 
-        android:selectable="false" android:key="monetprv" />
+
+    <PreferenceScreen
+        android:key="ext_plus_animation"
+        android:layout="@layout/ext_plus"
+        android:selectable="false" />
+
     <Preference 
         android:icon="@drawable/ic_customisation" 
         android:title="@string/monet_category" 
@@ -28,6 +31,7 @@
         android:summary="@string/monet_engine_summary" 
         android:fragment="org.aospextended.extensions.fragments.MonetEngine" 
         settings:layout="@layout/xd_pref_card_top_icon" />
+    
     <Preference 
         android:icon="@drawable/ic_status_bar_category" 
         android:title="@string/status_bar_category" 
