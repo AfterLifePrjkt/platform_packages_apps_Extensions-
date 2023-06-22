@@ -775,4 +775,9 @@
     <string name="brightness_slider_style_default">Default</string>
     <string name="brightness_slider_style_filled">Filled</string>
     <string name="brightness_slider_style_thin">Thin</string>
+
+    <!-- Qs Panel styles -->
+    <string name="qs_panel_style_title">Qs Panel style</string>
+    <string name="qs_panel_style_default">Default</string>
+    <string name="qs_panel_style_twotone">Two Tone Mode</string>
 </resources>
