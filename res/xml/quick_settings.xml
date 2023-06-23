@@ -30,6 +30,12 @@
             android:entryValues="@array/qs_panel_style_values"
             android:defaultValue="0" />
 
+        <org.aospextended.support.preference.SecureSettingSwitchPreference
+            android:title="@string/qs_split_shade_title"
+            android:key="qs_split_shade"
+            android:summary="@string/qs_split_shade_summary"
+            android:defaultValue="false" />
+
         <org.aospextended.support.preference.SystemSettingSeekBarPreference
             android:key="qs_header_image"
             android:title="@string/qs_header_image_title"

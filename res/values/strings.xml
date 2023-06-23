@@ -780,4 +780,7 @@
     <string name="qs_panel_style_title">Qs Panel style</string>
     <string name="qs_panel_style_default">Default</string>
     <string name="qs_panel_style_twotone">Two Tone Mode</string>
+
+    <string name="qs_split_shade_title">Split shade QS</string>
+    <string name="qs_split_shade_summary">Make the quick settings area divided into two parts horizontally</string>
 </resources>
