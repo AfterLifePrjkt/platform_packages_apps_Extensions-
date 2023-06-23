@@ -779,5 +779,9 @@
     <!-- Qs Panel styles -->
     <string name="qs_panel_style_title">Qs Panel style</string>
     <string name="qs_panel_style_default">Default</string>
-    <string name="qs_panel_style_twotone">Two Tone Mode</string>
+    <string name="qs_panel_style_twotone">Two Tone Accent</string>
+
+    <!-- QS Dual Tone Colors -->
+    <string name="qs_dual_tone_title">QS dual tone</string>
+    <string name="qs_dual_tone_summary">Use dual tone background colors</string>
 </resources>
