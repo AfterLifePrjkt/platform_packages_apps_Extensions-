@@ -23,6 +23,12 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
+        <Preference
+            android:key="custom_header"
+            android:fragment="org.aospextended.extensions.fragments.QsHeader"
+            android:title="@string/status_bar_custom_header_title"
+            android:summary="@string/status_bar_custom_header_summary" />
+
         <org.aospextended.support.preference.SecureSettingListPreference
             android:key="qs_panel_style"
             android:title="@string/qs_panel_style_title"
@@ -30,13 +36,7 @@
             android:entryValues="@array/qs_panel_style_values"
             android:defaultValue="0" />
 
-        <org.aospextended.support.preference.SystemSettingSeekBarPreference
-            android:key="qs_header_image"
-            android:title="@string/qs_header_image_title"
-            android:defaultValue="0"
-            settings:interval="1"
-            android:max="11"
-            android:min="0" />
+        
 
         <org.aospextended.support.preference.SystemSettingSeekBarPreference
             android:key="qs_transparency"
