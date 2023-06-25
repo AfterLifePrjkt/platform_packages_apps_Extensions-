@@ -854,4 +854,8 @@
     <string name="custom_battery_bottom">Margin Bottom</string>
     <string name="custom_battery_left">Margin Left</string>
     <string name="custom_battery_right">Margin Right</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Data icon style</string>
+    <string name="theme_customization_data_summary">Set custom data icon style</string>
 </resources>
