@@ -36,6 +36,12 @@
             android:entryValues="@array/battery_percent_values"
             android:defaultValue="0" />
 
+        <Preference
+            android:key="misc_batterysb"
+            android:fragment="org.aospextended.extensions.fragments.MiscBatterySettings"
+            android:title="Extra Customization"
+            android:summary="customize statusbar battery icon settings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
