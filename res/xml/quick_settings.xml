@@ -36,7 +36,19 @@
             android:entryValues="@array/qs_panel_style_values"
             android:defaultValue="0" />
 
-        
+        <org.aospextended.support.preference.SecureSettingListPreference
+            android:key="qs_style_round"
+            android:title="@string/qs_style_title"
+            android:entries="@array/qs_style_entries"
+            android:entryValues="@array/qs_style_values"
+            android:defaultValue="1" />
+
+        <org.aospextended.support.preference.SecureSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="2" />
 
         <org.aospextended.support.preference.SystemSettingSeekBarPreference
             android:key="qs_transparency"
