@@ -696,8 +696,8 @@
 
     <!-- QS style -->
     <string name="qs_style_title">QS Tile style</string>
-    <string name="qs_style_default">Large pill</string>
-    <string name="qs_style_round">Small circle</string>
+    <string name="qs_style_default">A12 Tile</string>
+    <string name="qs_style_round">A11 Tile</string>
 
     <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">Clear all notification button</string>
@@ -792,7 +792,8 @@
     <!-- Qs Panel styles -->
     <string name="qs_panel_style_title">Qs Panel style</string>
     <string name="qs_panel_style_default">Default</string>
-    <string name="qs_panel_style_twotone">Two Tone Mode</string>
+    <string name="qs_panel_style_twotone">TwoTone Accent</string>
+    <string name="qs_panel_style_twotone_outline">TwoTone Outline Accent</string>
 
     <!-- custom charging icon styles -->
     <string name="custom_battery_charging_icon_title">Charging icons</string>

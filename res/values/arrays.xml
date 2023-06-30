@@ -526,11 +526,13 @@
     <string-array name="qs_panel_style_entries" translatable="false">
         <item>@string/qs_panel_style_default</item>
         <item>@string/qs_panel_style_twotone</item>
+        <item>@string/qs_panel_style_twotone_outline</item>
     </string-array>
 
     <string-array name="qs_panel_style_values">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>
 
     <!-- QS header image -->
